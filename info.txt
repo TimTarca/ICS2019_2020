@@ -1,1 +1,1 @@
-class: ICS
+class: ICS (Integrated Computer Science)
