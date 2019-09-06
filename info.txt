@@ -1,1 +1,2 @@
-class: ICS (Integrated Computer Science)
+Class: ICS (Integrated Computer Science)
+Participants:
