@@ -57,7 +57,7 @@ def iterate(world):
     return newWorld
 
 # Initiates the game
-world=load("calabWorld.png")
+world=load("world.png")
 framesPerSecond=30
 while True:
     showCA(world,1000//framesPerSecond)
