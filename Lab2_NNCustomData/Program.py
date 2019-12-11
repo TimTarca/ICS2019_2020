@@ -17,7 +17,7 @@ data=pandas.read_csv("house.data", header=None)
 
 # Graphs of the data
 sns.pairplot( data=data,vars=(0,1,2,3), hue=4)
-# plt.show()
+#plt.show()
 
 # Converts the data in numpy array
 data=np.array(data)
@@ -38,7 +38,7 @@ testy=y[75:]
 
 # Determines the number of hidden layers
 # Determines the scores of the neural network
-clf = MLPClassifier(hidden_layer_sizes=[4,4], random_state=0, max_iter=10000)
+clf = MLPClassifier(hidden_layer_sizes=[4,100], random_state=0, max_iter=10000)
 clf.fit(trainX, trainy)
 trainScore=clf.score(trainX, trainy)
 testScore=clf.score(testX, testy)
