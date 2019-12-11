@@ -1,14 +1,4 @@
-	The data was randomly collected from the website Zillo.Organize the data by csv format. 
-With numbers equal to or greater than 1,000, do not separate numbers with commas.
-	When doing a grid search, lower and higher than four hidden layers and four nodes 
-showed to have 28% for the training set and 16% for the testing set. When running the neural
-network with four hidden layers and four nodes, the best results for the training set was 26%. 
-For the testing set, the best results was 28%.  
-	With the information from the results, the neural network was not able to accurately 
-determine the location of a house. The near one-in-four chance shows that the data between 
-houses was too similar. The result may also suggest that the neural network was guessing the 
-location of a house. 
-	If further research was done on this dataset, more parameters should be acquired to
-help the neural network be more accurate. The parameter "bathrooms" may be removed due to how 
-similar the data was between all houses. Also, more data could be collected to improve the
-accuracy of the nueral network.
+	The data was randomly collected from the website Zillow. The data was organized by csv format. With numbers equal to or greater than 1,000, do not separate numbers with commas.
+	When doing a grid search, lower and higher than four hidden layers and four nodes showed to have 28% for the training set and 16% for the testing set. When running the neuralnetwork with four hidden layers and four nodes, the best results for the training set was 26%. For the testing set, the best results was 28%.  
+	With the information from the results, the neural network was not able to accurately determine the location of a house. The near one-in-four chance shows that the data between houses was too similar. The result may also suggest that the neural network was guessing the location of a house. 
+	If further research was done on this dataset, more parameters should be acquired to help the neural network be more accurate. The parameter "bathrooms" may be removed due to how similar the data was between all houses. Also, more data could be collected to improve the accuracy of the nueral network.
