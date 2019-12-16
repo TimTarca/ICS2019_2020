@@ -1,0 +1,33 @@
+Rough Draft
+
+Intro
+Many times looking for a house with specific characteristics can take a while to discover. However, this project aims to shorten the time a person’s time for house searching. Software with these capabilities could bring a pleasant convenience and possibly change the real-estate industry as well. 
+	Neural networks have been practically applied to multiple problems. For instance, they have been utilized to detect credit card fraud. Also, they have been used in classifying cursive handwriting in software applications. Both examples and more reveal that neural networks have great potential for solving classification problems.1
+	In an article by Citylab, the value of square footage has drastically changed based on the location of the residency. Although suburban homes typically have more square footage than urban ones, the prices of urban have slightly increased over time. With the graphs provided by the article, the prices of rural houses are far less than residencies in urban areas. Statistics and graphs from the article reveal the truth that regions of a house can primarily affect the property value of the residence.
+The function of the neural network is to accurately differentiate the location of a house based on the given parameters. The neural network is considered successful if it is able to accurately determine the location of the house with a 70% success rate. The overall goal of the project is for a user to provide desirable house characteristics and be returned a possible location of their desirable house. 
+In setting up the environment, install python 3.7.1 and the libraries pandas, numpy, sci-kit learn, seaborn. Gather the data from website Zillow and randomly select twenty-five houses for each location: Orange County, CA; Dallas County, TX; Madison County, AL; and Brooklyn, NY. Parameters of the neural network are the number of bedrooms, the number of bathrooms, the pricing, and the square footage.
+
+
+Procedures
+To set up the environment, install Python version 3.7.1. Also, have the following libraries: numpy 1.15.4, pandas 0.23.4, scikit-learn 0.20.1, and seaborn 0.9.0. From sklearn.utils, import shuffle; from sklearn.neural_network, import MLPClassifier; from sklearn.model_selection, import cross_validate; from sklearn.preprocessing, import normalize. 
+	To collect the data, go to the website Zillow. Then randomly select twenty-five houses from each of the following areas: Orange County, CA; Dallas County, TX; Madison County, AL; and Brooklyn, NY. Do not select houses without information about the number of bedrooms, the number of bathrooms, the pricing, and the square footage. 
+  To normalize the data, use the normalize function. 
+	The parameters of the neural network are the number of bedrooms, the number of bathrooms, the pricing, and the square footage. For the training set, give the neural network seventy-five data points. For the testing set, give the neural network twenty-five data points.
+
+Results
+When doing a grid search, four hidden layers and four nodes produced the best results. The neural network had a 26% accuracy for the training set and a 28% accuracy for the test set. If the hidden layers or nodes were reduced, the training accuracy increased to 28%, but the testing accuracy decreased to 16%. When increasing the hidden layers or nodes, the training accuracy also consistently remained at 28%, and the testing accuracy also at 16%. When cross-validating, the best training score remained at 25%, and the best testing score was also 25%.
+
+
+
+
+
+Conclusion
+To collect the data, go to the website Zillow and randomly select houses to be a part of the database. Organize the data by CSV format. With numbers equal to or greater than 1,000, do not separate numbers with commas.
+When doing a grid search, lower and higher than four hidden layers and four nodes showed to have 28% for the training set and 16% for the testing set. When running the neural network with four hidden layers and four nodes, the best results for the training set was 26%. For the testing set, the best result was 28%.  
+With the information from the results, the neural network was not able to accurately determine the location of a house. The near one-in-four chance shows that the data between houses was too similar. The result may also suggest that the neural network was guessing the location of a house. If further research was done on this dataset, more attributes should be acquired to help the neural network more accurately.
+
+
+
+
+1 Ahire, Jayesh Bapu. “Real World Applications of Artificial Neural Networks.” Medium. Medium, April 10, 2018. https://medium.com/@jayeshbahire/real-world-applications-of-artificial-neural-networks-a6a6bc17ad6a.
+2 Florida, Richard. “The Incredible Rise of Urban Real Estate.” CityLab. The Atlantic Monthly Group, February 25, 2016. https://www.citylab.com/equity/2016/02/rise-of-urban-real-estate/470748/ .
